@@ -1,0 +1,100 @@
+/* game-style.css */
+
+
+/* Color scheme */
+/*#startPagePane{*/
+/*    -fx-border-color: red ;*/
+/*}*/
+
+/*#gamePane{*/
+/*    -fx-border-color: red ;*/
+/*    !*-fx-overflow-x: hidden;*!*/
+/*    !*-fx-overflow-y: hidden;*!*/
+/*}*/
+
+.root {
+    -fx-background-color: #f7f7f7;
+    -fx-font-family: "Press Start 2P";
+}
+
+/* Text styles */
+.text {
+    -fx-fill: #535353; /* Dark gray for text */
+    -fx-font-family: "Press Start 2P";
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-fill: #535353;
+}
+
+.instruction {
+    -fx-font-size: 16px;
+    -fx-fill: #535353;
+}
+
+
+/* Button styles */
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #e2e2e2;
+    /*-fx-border-width: 2;*/
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: white;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: white;
+    -fx-text-fill: #1d1d1d;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 10px, 10px;
+-fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+
+/* Score display */
+.score {
+    -fx-font-size: 18px;
+    -fx-fill: #535353;
+}
+
+/* Game over text */
+.game-over {
+    -fx-font-size: 32px;
+    -fx-fill: #535353;
+}
+
+/* High score */
+.high-score {
+    -fx-font-size: 16px;
+    -fx-fill: #7a7a7a; /* Lighter gray for high score */
+}
